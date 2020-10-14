@@ -15,6 +15,21 @@ SortTool::SortTool() {}
 void SortTool::InsertionSort(vector<int>& data) {
     // Function : Insertion sort
     // TODO : Please complete insertion sort code here
+    int n = data.size();
+    if( n==1 )
+        return;
+    else{
+        for(int j=1; j<n; j++){
+            int key = data[j];
+            int i = j-1;
+            while(i >= 0 && data[i] > key){
+                data[i+1] = data[i];
+                i--;
+            }
+            data[i+1] = key;
+        }
+    }
+
 }
 
 // Quick sort method
@@ -30,7 +45,7 @@ void SortTool::QuickSortSubVector(vector<int>& data, int low, int high) {
 }
 
 int SortTool::Partition(vector<int>& data, int low, int high) {
-    // Function : Partition the vector 
+    // Function : Partition the vector
     // TODO : Please complete the function
     // Hint : Textbook page 171
 }
