@@ -27,7 +27,7 @@ class SortTool {
                                                     //if both right and left sub-tree are max-heap
         void        BuildMaxHeap(vector<int>&); // make data become a max-heap
         int         heapSize; // heap size used in heap sort
-        
+//	void        swapElement(vector<int>& data, int a, int b)   { int temp = data[a]; data[a] = data[b]; data[b] = temp; }        
 };
 
 #endif
